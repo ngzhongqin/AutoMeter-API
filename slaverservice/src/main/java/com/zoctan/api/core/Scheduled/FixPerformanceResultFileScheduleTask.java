@@ -1,6 +1,5 @@
 package com.zoctan.api.core.Scheduled;
 
-import com.sun.corba.se.impl.orb.ParserTable;
 import com.zoctan.api.core.config.RedisUtils;
 import com.zoctan.api.entity.*;
 import com.zoctan.api.mapper.SlaverMapper;
@@ -15,18 +14,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import tk.mybatis.mapper.entity.Condition;
 
 import javax.annotation.PostConstruct;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.*;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.Enumeration;
 import java.util.List;
 
 /**
@@ -34,7 +31,7 @@ import java.util.List;
  */
 /*
  @author Season
- @DESCRIPTION 
+ @DESCRIPTION
  @create 2020/11/21
 */
 @Slf4j

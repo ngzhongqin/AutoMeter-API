@@ -12,7 +12,8 @@ spring:
     # 用户名 root
     username: MyEnc({k/LqLqGoeBEoMz+MLuB6cg==})
     # 密码 123456
-    password: MyEnc({I6NT3SWbkubdgO2sXBEivg==})
+#    password: MyEnc({I6NT3SWbkubdgO2sXBEivg==})
+    password: 12345678
     # 驱动类
     driver-class-name: com.mysql.cj.jdbc.Driver
   cache:

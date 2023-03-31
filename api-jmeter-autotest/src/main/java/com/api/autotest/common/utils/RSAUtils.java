@@ -1,8 +1,6 @@
 package com.api.autotest.common.utils;
 
 import org.apache.commons.codec.binary.Base64;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -272,7 +270,7 @@ public class RSAUtils {
         String encoded = null;
         if (needEncode != null)
         {
-            encoded = new BASE64Encoder().encode(needEncode);
+            encoded = new Base64().encodeAsString(needEncode);
         }
         return encoded;
     }
@@ -289,7 +287,7 @@ public class RSAUtils {
         byte[] decoded = null;
         if (needDecode != null)
         {
-            decoded = new BASE64Decoder().decodeBuffer(needDecode);
+            decoded = new Base64().decode(needDecode);
         }
         return decoded;
     }

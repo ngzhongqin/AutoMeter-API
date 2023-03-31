@@ -49,6 +49,16 @@ public class JasyptConfig {
         };
     final PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
     encryptor.setConfig(config);
+
+//    log.info("decrypt="+encryptor.decrypt("zn4HSOc+m0ZLHUygmePkcg=="));
+//    String username = encryptor.encrypt("root");
+//    log.info("username="+username);
+//    String new_password = encryptor.encrypt("12345678");
+//    log.info("new_password="+new_password);
+//
+//    log.info("decrypt_username="+encryptor.decrypt("Hbd5sJc6cCXWZ3RYT0doDA=="));
+//    log.info("decrypt+password="+encryptor.decrypt("n2agYGCFWt9c9bfGz/a1haUG5KALIjKg"));
+
     return encryptor;
   }
 }
