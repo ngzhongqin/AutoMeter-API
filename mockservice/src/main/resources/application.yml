@@ -11,8 +11,6 @@ spring:
     url: jdbc:mysql://localhost:3306/testcenter?useUnicode=true&useSSL=false&allowMultiQueries=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=UTC
     # 用户名 root
     username: MyEnc({Hbd5sJc6cCXWZ3RYT0doDA==})
-    # 密码 123456
-    #    password: MyEnc({zn4HSOc+m0ZLHUygmePkcg==})
     # 密码 12345678
     password: MyEnc({hr6UPFLRFRF8sHOTnVvzHkOpqH6LXW3r})
     # 驱动类

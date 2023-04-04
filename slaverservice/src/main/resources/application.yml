@@ -8,13 +8,8 @@ spring:
     # 数据源（应该全部加密）
   datasource:
     # 连接，注意各个配置，尤其是要一次性执行多条 SQL 时，要 allowMultiQueries=true
-    url: jdbc:mysql://localhost:3306/testcenter?useUnicode=true&useSSL=false&allowMultiQueries=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=UTC
-    # 用户名 root
-    #    username: MyEnc({2oq5sk2pnQEe463zkOQ29Q==})
-    # 用户名 root
+    url: jdbc:mysql://localhost:3306/testcenter?useUnicode=true&useSSL=false&allowMultiQueries=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: MyEnc({Hbd5sJc6cCXWZ3RYT0doDA==})
-    # 密码 123456
-    #    password: MyEnc({zn4HSOc+m0ZLHUygmePkcg==})
     # 密码 12345678
     password: MyEnc({hr6UPFLRFRF8sHOTnVvzHkOpqH6LXW3r})
     # 驱动类
